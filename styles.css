@@ -1,0 +1,120 @@
+body {
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+}
+
+#mainMenu {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+#inputNameDivider {
+    position: absolute;
+    display: flex;
+    width: 50%;
+    height: 100%;
+    background-color: aqua;
+    align-content: center;
+    justify-content: center;
+}
+
+#playerInputForm{
+    position: relative;
+    justify-self: center;
+    align-self: center;
+    display: inline;
+}
+
+#playerListDivider{
+    position: absolute;
+    display: flex;
+    left: 50%;
+    width: 50%;
+    height: 100%;
+    background-color: brown;
+    align-content: center;
+    justify-content: center;
+    overflow: scroll;
+}
+
+#playerListDivider::-webkit-scrollbar {
+    display: none;
+}
+
+#listOfPlayers {
+    position: relative;
+    justify-self: center;
+    align-self: center;
+    font-size: 6vh;
+    width: 100%;
+}
+
+#listOfPlayers li {
+    background-color: antiquewhite;
+    display: flex;
+    justify-self: center;
+    align-self: center;
+    justify-content: space-between;
+    width: 80%;
+    padding: 0.5vh;
+}
+
+#start {
+    display: block;
+    position: absolute;
+    left: 35%;
+    top: 30%;
+    width: 40vh;
+    height: 40vh;
+}
+
+#startButton {
+    width: 100%;
+    height: 100%;
+}
+
+#back {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    height: 12vh;
+    aspect-ratio: 1;
+    margin: 1vh;
+}
+
+#roleSelection {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: none;
+}
+
+#roleSelectionContent {
+    width: 100%;
+    height: 100%;
+    background-color: bisque;
+    align-items: center;
+    justify-items: center;
+}
+
+#revealRole {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%); 
+    bottom: 30vh;
+}
+
+#warning {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%); 
+    bottom: 15vh;
+    display: none;
+}
+
+#roleHolder {
+    width: 100%;
+    height: 50%;
+}

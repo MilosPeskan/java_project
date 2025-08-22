@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="eng">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" type="image.png" href="">
+        <title>Mafija</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <div id="mainMenu">
+            <div id="inputNameDivider">
+                <form id="playerInputForm">
+                    <input type="text" id="inputName" placeholder="Unesite ime igrača">
+                    <button type="submit" id="addPlayer"> Dodaj </button>
+                </form>
+            </div>
+            <div id="playerListDivider">
+                <ul id="listOfPlayers">
+
+                </ul>
+            </div>
+            <div id="start">
+                <button id="startButton"></button>
+            </div>
+        </div>
+        <div id="roleSelection">
+             <div id="roleSelectionContent">
+                <h1 id="player"> Igrač placeholder </h1>
+                <div id="roleHolder"></div>
+                <button id="revealRole"> Otkrij ulogu </button>
+                <p id="warning"> Kliknite na dugme da sakrijete svoju ulogu i predajte telefon igraču koji je sledeći naveden </p>
+            </div>
+            <button id="back"></button>
+        </div>
+        <script src="index.js"></script>
+    </body>
+</html>
