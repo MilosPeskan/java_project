@@ -8,7 +8,7 @@
         <link rel="stylesheet" href="styles.css">
     </head>
     <body>
-        <div id="mainMenu">
+        <div id="mainMenu" class="menu">
             <div id="inputNameDivider">
                 <form id="playerInputForm">
                     <input type="text" id="inputName" placeholder="Unesite ime igrača">
@@ -16,23 +16,53 @@
                 </form>
             </div>
             <div id="playerListDivider">
-                <ul id="listOfPlayers">
-
-                </ul>
+                <ul id="listOfPlayers"></ul>
             </div>
-            <div id="start">
-                <button id="startButton"></button>
+            <div id="settings">
+                <button id="settingsButton"></button>
             </div>
         </div>
-        <div id="roleSelection">
+        <div id="roleSelection" class="menu">
              <div id="roleSelectionContent">
                 <h1 id="player"> Igrač placeholder </h1>
-                <div id="roleHolder"></div>
+                <div id="roleHolder">
+                    <p id="displayName"></p>
+                    <p id="displayAlignment"></p>
+                    <p id="displayDesc"></p>
+                </div>
                 <button id="revealRole"> Otkrij ulogu </button>
-                <p id="warning"> Kliknite na dugme da sakrijete svoju ulogu i predajte telefon igraču koji je sledeći naveden </p>
+                <p id="warning"> Kliknite na dugme da sakrijete svoju ulogu i predajte uređaj sledećem igraču.</p>
             </div>
             <button id="back"></button>
         </div>
-        <script src="index.js"></script>
+        <div id="settingsMenu" class="menu">
+            <div class="ribbon">
+                <div id="filter"></div>
+                <div id="start">
+                    <button id="startButton"></button>
+                </div>
+                <button class="cancel" id="cancel"></button>
+            </div>
+            <div class="cardHolder" id="cardHolder"></div>
+        </div>
+        <div id="managerMenu" class="menu">
+            <div class="ribbon">
+                <div id="start">
+                    <button id="nightButton"></button>
+                </div>
+                <button class="cancel" id="cancelManager"></button>
+            </div>
+            <div class="cardHolder" id="playerHolder"></div>
+        </div>
+        <div id="playerInfoMenu" class="menu">
+            <div id="infoRole"></div>
+            <button id="backToManager"></button>
+        </div>
+        <div id="nightMenu" class="menu">
+            <p id="wakeUpRole"> Role placeholder</p>
+            <button id="wakeNext"></button>
+            <button id="action"></button>
+        </div>
+        <script type="module" src="index.js"></script>
     </body>
 </html>
