@@ -9,17 +9,16 @@
     </head>
     <body>
         <div id="mainMenu" class="menu">
-            <div id="inputNameDivider">
-                <form id="playerInputForm">
-                    <input type="text" id="inputName" placeholder="Unesite ime igrača">
-                    <button type="submit" id="addPlayer"> Dodaj </button>
-                </form>
-            </div>
+            <div id="inputNameDivider"></div>
+            <form id="playerInputForm">
+                <input type="text" id="inputName" placeholder="Unesite ime igrača">
+                <button type="submit" id="addPlayer"> Dodaj </button>
+            </form>
             <div id="playerListDivider">
                 <ul id="listOfPlayers"></ul>
             </div>
             <div id="settings">
-                <button id="settingsButton"></button>
+                <button id="settingsButton"> Dalje </button>
             </div>
         </div>
         <div id="roleSelection" class="menu">
@@ -33,35 +32,37 @@
                 <button id="revealRole"> Otkrij ulogu </button>
                 <p id="warning"> Kliknite na dugme da sakrijete svoju ulogu i predajte uređaj sledećem igraču.</p>
             </div>
-            <button id="back"></button>
+            <button id="back" id="cancel"> Nazad </button>
         </div>
         <div id="settingsMenu" class="menu">
             <div class="ribbon">
                 <div id="filter"></div>
                 <div id="start">
-                    <button id="startButton"></button>
+                    <button id="startButton"> Start </button>
                 </div>
-                <button class="cancel" id="cancel"></button>
+                <button class="cancel" id="cancel"> Nazad </button>
             </div>
             <div class="cardHolder" id="cardHolder"></div>
         </div>
         <div id="managerMenu" class="menu">
             <div class="ribbon">
                 <div id="start">
-                    <button id="nightButton"></button>
+                    <button id="nightButton"> Spavanje </button>
                 </div>
-                <button class="cancel" id="cancelManager"></button>
+                <button class="cancel" id="cancelManager"> Cancel </button>
             </div>
             <div class="cardHolder" id="playerHolder"></div>
         </div>
         <div id="playerInfoMenu" class="menu">
             <div id="infoRole"></div>
-            <button id="backToManager"></button>
+            <button id="backToManager"> Nazad </button>
         </div>
         <div id="nightMenu" class="menu">
             <p id="wakeUpRole"> Role placeholder</p>
-            <button id="wakeNext"></button>
-            <button id="action"></button>
+            <div id="buttonHolder">
+                <button id="action" class="actionButton"></button>
+                <button id="secondAction" class="actionButton"></button>
+            </div>
         </div>
         <script type="module" src="index.js"></script>
     </body>
